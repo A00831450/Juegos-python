@@ -58,7 +58,7 @@ def rectangle(start, end):
     begin_fill()
 
     for i in range(2):
-          forward(end.x) #Forward turtle by 150 units
+          forward(end.x - start.x) #Forward turtle by 150 units
           left(90) #Turn turtle by 90 degree
           forward(80) #Forward turtle by 80 units
           left(90) #Turn turtle by 90 degree
@@ -68,7 +68,16 @@ def rectangle(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for i in range(3):
+          forward(end.x - start.x) #Forward turtle by 150 units
+          left(120) #Turn turtle by 90 degree
+
+    end_fill()
 
 
 def tap(x, y):
