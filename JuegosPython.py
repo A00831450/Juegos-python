@@ -8,6 +8,9 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 
+#A00831450 - Franco Sotomayor
+#
+#
 """
 
 from turtle import *
