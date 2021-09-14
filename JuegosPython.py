@@ -57,10 +57,11 @@ def rectangle(start, end):
     down()
     begin_fill()
 
-    for count in range(4):
-        forward(100)
-        left(90)
-        forward(50)
+    for i in range(2):
+          forward(end.x) #Forward turtle by 150 units
+          left(90) #Turn turtle by 90 degree
+          forward(80) #Forward turtle by 80 units
+          left(90) #Turn turtle by 90 degree
 
     end_fill()
 
